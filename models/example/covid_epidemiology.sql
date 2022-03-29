@@ -1,4 +1,4 @@
-  create  or update table "dev".public."covid_epidemiology__dbt_tmp"
+  create or update table "dev".public."covid_epidemiology__dbt_tmp"
       compound sortkey(_airbyte_emitted_at)
   as (
 
