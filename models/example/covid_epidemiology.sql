@@ -2,8 +2,7 @@ create  table "dev"."public"."covid_epidemiology__dbt_tmp"
 as (
     select
         _airbyte_emitted_at,
-        (current_timestamp at time zone 'utc')::timestamp as _airbyte_normalized_at,
-
+        
         cast(jsonb_extract_path_text("_airbyte_data",'key') as varchar) as "key",
         cast(jsonb_extract_path_text("_airbyte_data",'date') as varchar) as "date",
         cast(jsonb_extract_path_text("_airbyte_data",'new_tested') as float) as new_tested,
