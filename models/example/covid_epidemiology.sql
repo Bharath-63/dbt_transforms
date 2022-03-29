@@ -1,4 +1,4 @@
-  create  table
+  create  or update table
     "dev".public."covid_epidemiology__dbt_tmp"
 
 
